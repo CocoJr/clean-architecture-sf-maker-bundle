@@ -3,3 +3,7 @@ parameters:
 services:
   CocoJr\CleanArchitectureSfMakerBundle\Maker\MakeMessengerCommand:
     tags: ['maker.command']
+
+  CocoJr\CleanArchitectureSfMakerBundle\Service\:
+    resource: '../Service/*'
+    tags: [ 'maker.command' ]

@@ -18,7 +18,7 @@ class MakeMessengerCommand extends AbstractMaker
 
     public static function getCommandName(): string
     {
-        return 'make2:messenger:template';
+        return 'make:business:template';
     }
 
     public function configureCommand(Command $command, InputConfiguration $inputConfig)
@@ -121,10 +121,15 @@ class MakeMessengerCommand extends AbstractMaker
         if (strpos($serviceFileContent, $serviceNamespaceDeclaration) === false) {
             $filesystem->appendToFile($serviceFile, "\n\n    ## ".$input->getArgument('domain').$input->getArgument('type')." ##");
             $filesystem->appendToFile($serviceFile, "\n    ".$serviceNamespaceDeclaration."\\:");
-            $filesystem->appendToFile($serviceFile, "\n        resource: '../src/Business/".$input->getArgument('domain')."/".$input->getArgument('type')."/Handler/*'");
+            $filesystem->appendToFile($serviceFile, "\n        resource: '../business/".$input->getArgument('domain')."/".$input->getArgument('type')."/Handler/*'");
             $filesystem->appendToFile($serviceFile, "\n        tags: [{ name: messenger.message_handler, bus: ".strtolower($input->getArgument('type')).".bus }]");
             $filesystem->appendToFile($serviceFile, "\n        autoconfigure: false");
             $filesystem->appendToFile($serviceFile, "\n    ## /".$input->getArgument('domain').$input->getArgument('type')." ##");
         }
+    }
+
+    public static function getCommandDescription(): string
+    {
+        return 'Create a complete Business template for implementing the clean-architecture in symfony.';
     }
 }
