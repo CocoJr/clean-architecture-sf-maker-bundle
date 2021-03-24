@@ -2,7 +2,7 @@
 
 ### Installation
 
-`composer install cocojr/clean-architecture-sf-maker-bundle`  
+`composer require cocojr/clean-architecture-sf-maker-bundle`  
   
 If you don't use Symfony flex, register the bundle for all the environments.
 
