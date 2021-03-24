@@ -1,0 +1,20 @@
+{
+  "name": "cocojr/clean-architecture-sf-maker-bundle",
+  "description": "Clean architecture maker command",
+  "type": "symfony-bundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "CocoJr",
+      "email": "thibaultcolette06@hotmail.fr"
+    }
+  ],
+  "require": {
+    "cocojr/clean-architecture": "^1.2.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "CocoJr\\CleanArchitectureSfMakerBundle\\": ""
+    }
+  }
+}

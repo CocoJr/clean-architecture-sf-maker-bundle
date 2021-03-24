@@ -1,0 +1,52 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "3c56a3c9aa4d96c1de31db306786c4ad",
+    "packages": [
+        {
+            "name": "cocojr/clean-architecture",
+            "version": "v1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CocoJr/clean-architecture.git",
+                "reference": "2666237f31d8a23ccfee22ef604adb662c90748f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CocoJr/clean-architecture/zipball/2666237f31d8a23ccfee22ef604adb662c90748f",
+                "reference": "2666237f31d8a23ccfee22ef604adb662c90748f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "CocoJr\\CleanArchitecture\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "CocoJr",
+                    "email": "thibaultcolette06@hotmail.fr"
+                }
+            ],
+            "description": "Clean architecture implementation",
+            "time": "2020-10-28T10:35:56+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
+}
