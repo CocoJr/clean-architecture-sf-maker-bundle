@@ -2,8 +2,8 @@
 
 namespace CocoJr\CleanArchitectureSfMakerBundle\Service;
 
-use Business\AbstractResponse;
-use Business\Domain\Service\EventDispatcherInterface;
+use CocoJr\CleanArchitecture\Business\Response\AbstractResponse;
+use CocoJr\CleanArchitecture\Business\Service\EventDispatcherInterface;
 use Symfony\Component\Messenger\Envelope;
 use Symfony\Component\Messenger\MessageBusInterface;
 

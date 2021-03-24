@@ -2,9 +2,9 @@
 
 namespace CocoJr\CleanArchitectureSfMakerBundle\Service;
 
-use Business\AbstractMessage;
-use Business\AbstractResponse;
-use Business\Domain\Service\DispatcherInterface;
+use CocoJr\CleanArchitecture\Business\Message\AbstractMessage;
+use CocoJr\CleanArchitecture\Business\Response\AbstractResponse;
+use CocoJr\CleanArchitecture\Business\Service\DispatcherInterface;
 use Symfony\Component\Messenger\Envelope;
 use Symfony\Component\Messenger\MessageBusInterface;
 use Symfony\Component\Messenger\Stamp\HandledStamp;

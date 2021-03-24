@@ -2,7 +2,7 @@
 
 namespace CocoJr\CleanArchitectureSfMakerBundle\Service;
 
-use Business\Domain\Service\UseCaseDispatcherInterface;
+use CocoJr\CleanArchitecture\Business\Service\UseCaseDispatcherInterface;
 use Symfony\Component\Messenger\MessageBusInterface;
 
 final class UseCaseDispatcher extends AbstractDispatcher implements UseCaseDispatcherInterface

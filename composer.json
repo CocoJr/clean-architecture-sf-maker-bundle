@@ -11,7 +11,11 @@
   ],
   "require": {
     "cocojr/clean-architecture": "^1.2.2",
-    "symfony/messenger": "*"
+    "symfony/messenger": "*",
+    "symfony/http-kernel": "^5.2",
+    "symfony/dependency-injection": "^5.2",
+    "symfony/config": "^5.2",
+    "symfony/maker-bundle": "^1.30"
   },
   "autoload": {
     "psr-4": {

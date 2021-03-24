@@ -2,7 +2,7 @@
 
 namespace CocoJr\CleanArchitectureSfMakerBundle\Service;
 
-use Business\Domain\Service\QueryDispatcherInterface;
+use CocoJr\CleanArchitecture\Business\Service\QueryDispatcherInterface;
 use Symfony\Component\Messenger\MessageBusInterface;
 
 final class QueryDispatcher extends AbstractDispatcher implements QueryDispatcherInterface
